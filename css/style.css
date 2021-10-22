@@ -1,3 +1,4 @@
+/* common */
 * {
     padding: 0;
     margin: 0;
@@ -15,3 +16,181 @@ html {
     display: table;
     clear: both;
 }
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.container-box {
+    width: 85%;
+    margin: auto 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto 0;
+}
+
+.box {
+    width: calc(100% - 1.5em);
+}
+
+header {
+    height: 80px;
+    line-height: 80px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-blue {
+    color: #0061ff;
+}
+
+ul, li {
+    display: inline-block;
+}
+
+.btn {
+    border: 1px transparent black;
+}
+
+.bg-blue {
+    background-color: #0061ff;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.sol {
+    border: solid;
+}
+
+/* common */
+
+
+
+
+/* navigation */
+
+header {
+    display: fixed;
+}
+
+
+.logo img {
+    margin-left: 1em;
+    vertical-align: middle;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li {
+    margin-left: 3em;
+}
+
+.nav li a.btn {
+    padding: 5px 30px;
+    margin-right: 1em;
+    color: white;
+}
+
+/* navigation */
+
+
+
+
+/* jumbotron */
+
+
+
+/* jumbotron */
+
+
+
+
+/* Business */
+
+
+
+/* Business */
+
+
+
+
+/* Business Plan */
+
+
+
+/* Business Plan */
+
+
+
+
+/* Operation */
+
+
+
+/* Operation */
+
+
+
+
+/* Sponsor */
+
+
+
+/* Sponsor */
+
+
+
+
+/* FAQ */
+
+
+
+/* FAQ */
+
+
+
+
+/* footer */
+
+
+
+/* footer */
+
+
+
+
+/* utilities */
+
+
+
+/* utilities */
+
+
+
+
+/* end */
+
+
+
+/* end */
