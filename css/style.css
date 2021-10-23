@@ -71,13 +71,17 @@ h1 {
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-weight: 800;
 }
 
 h3 {
     font-size: 1.2em;
     font-weight: 800;
+}
+
+.box-title {
+    font-size: 2.5em;
 }
 
 .text-center {
@@ -275,7 +279,7 @@ ul, li {
     margin-top: 7.5em;
 }
 
-.business-plan-list .column {
+.column {
     width: calc(100% / 3 - 21.49px);
     border: 1px solid gray;
     height: 75em;
@@ -328,7 +332,7 @@ span {
     margin-bottom: 2.5em;
 }
 
-.function a {
+.function a.btn {
     margin-bottom: 20em;
     padding: 5px 30px;
 }
@@ -338,7 +342,7 @@ span {
 }
 
 .function div span a{
-    margin-left: -0.6em;
+    margin-left: 0.4em;
     text-decoration: underline;
 }
 
@@ -391,7 +395,7 @@ span {
 /* Partner */
 
 .partener-box {
-    margin-top: 6.5em;
+    margin-top: 10em;
     height: 30em;
 }
 .pharagraph {
@@ -419,8 +423,40 @@ span {
 
 
 /* Operation */
+.card .box-title {
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
+}
 
+.card .column {
+    margin-top: 2em;
+    height: 32em;
+    border: transparent;
+}
 
+.card .column:nth-child(1n + 5) {
+    margin-top: 6em;
+}
+
+.card .column:nth-child(3n + 3) {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.card-image {
+    height: 50%;
+    justify-content: center;
+}
+
+.card-pharagraph h2 {
+    margin-top: 1em;
+}
+
+.card-pharagraph p {
+    margin-top: 1.5em;
+    font-size: 1em;
+    line-height: 1.45em;
+}
 
 /* Operation */
 
