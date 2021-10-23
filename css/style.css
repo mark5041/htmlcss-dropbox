@@ -32,12 +32,13 @@ html {
 }
 
 .container {
-    width: 60%;
+    width: 56%;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .box {
-    width: calc(100% - 1.5em);
+    margin: 0 10%;
 }
 
 .box-flex {
@@ -47,16 +48,26 @@ html {
 header {
     height: 80px;
     line-height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
 .header {
     width: 78%;
-    margin: 0 auto;
+    position: fixed;
+    margin: 0 11%;
 }
 
 h1 {
-    font-size: 5em;
-    font-weight: extra-bold-800;
+    font-size: 4.3em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3.2em;
+    font-weight: 800;
 }
 
 .text-center {
@@ -114,9 +125,6 @@ ul, li {
 
 /* navigation */
 
-header {
-    display: fixed;
-}
 
 
 .logo img {
@@ -146,7 +154,8 @@ header {
 /* jumbotron */
 
 .jumbo {
-    height: 70vh;
+    height: 78vh;
+    margin-top: 5em;
 }
 
 .jumbo-title {
@@ -154,32 +163,30 @@ header {
 }
 
 .chest {
-    padding-right: 5em;
-    margin-right: 4em;
-    width: 25%;
+    margin-right: 1em;
+    width: 35%;
 }
 
-.chest p{
-    margin-bottom: 3em;
+.chest-item {
+    margin-top: 3em;
+    width: 100%;
 }
 
-.chest a:last-of-type {
-    margin-top: 2em;
-    margin-bottom: 2em;
+.chest-item i{
+    font-size: 3em;
+    margin-top: 0.2em;
 }
 
-.jumbo .chest a.btn{
-    padding: 5px 30px;
+.jumbo .chest-item a.btn{
+    padding: 8px 30px;
 }
-
 
 .box-image img{
-    max-width: 950px;
+    max-width: 870px;
 }
 
-
 .space {
-    height: 8em;
+    height: 13em;
 }
 
 /* jumbotron */
@@ -196,11 +203,137 @@ header {
 
 
 
-/* Business Plan */
+/* Business Plan Checkbox */
+
+.fatturazione {
+    margin: 3em 0 2.5em;
+    line-height: 20px;
+}
+
+.rounded-check {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    
+    transition: 1s;
+}
+
+.rounded-check:checked {
+    border: 5px solid #0061ff;
+}
+
+.rounded-check-text {
+    position: absolute;
+    font-size: 20px;
+}
+
+.rounded-check:first-of-type{
+    left: 22%;
+}
+
+.rounded-check:last-of-type{
+    left: 37%;
+}
+
+.rounded-check-text:first-of-type {
+    left: 23.5%;
+}
+
+.rounded-check-text:last-of-type{
+    left: 38.5%;
+}
+
+/* Business Plan Checkbox */
 
 
 
-/* Business Plan */
+
+/* Business Plan List */
+
+.business-plan-list {
+    margin-top: 7.5em;
+}
+
+.business-plan-list .column {
+    width: calc(100% / 3 - 4em);
+    float: left;
+    border: 1px solid gray;
+}
+
+.business-plan-list .column:nth-child(2) {
+    margin: 0 2em;
+}
+
+.business-plan-list .column h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.price {
+    margin-top: 1em;
+}
+
+.price h2 {
+    font-size: 25px;
+}
+
+span {
+    width: 100%;
+}
+
+.price span:first-of-type {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.price span:last-of-type {
+    font-size: 17px;
+    color: rgb(117, 115, 115);
+}
+
+.function {
+    margin-top: 2.5em;
+}
+
+.fa-ul {
+    margin-left: 9%;
+}
+
+.function li {
+    margin-bottom: 1.5em;
+}
+
+.function li:last-of-type {
+    margin-bottom: 2.5em;
+}
+
+.function a {
+    margin-bottom: 20em;
+    padding: 5px 15px;
+}
+.function div {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.function div span a{
+    margin-left: -0.6em;
+    text-decoration: underline;
+}
+
+
+/* Business Plan List */
 
 
 
