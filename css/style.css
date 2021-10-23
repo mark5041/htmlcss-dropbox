@@ -34,7 +34,6 @@ html {
 .container {
     width: 56%;
     margin: 0 auto;
-    height: 100vh;
 }
 
 .box {
@@ -51,7 +50,8 @@ header {
     background-color: white;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index: 999;
 }
 
 .header {
@@ -66,7 +66,12 @@ h1 {
 }
 
 h2 {
-    font-size: 3.2em;
+    font-size: 1.7em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.2em;
     font-weight: 800;
 }
 
@@ -154,7 +159,7 @@ ul, li {
 /* jumbotron */
 
 .jumbo {
-    height: 78vh;
+    height: 74vh;
     margin-top: 5em;
 }
 
@@ -262,19 +267,20 @@ ul, li {
 }
 
 .business-plan-list .column {
-    width: calc(100% / 3 - 4em);
+    width: calc(100% / 3 - 21.49px);
     float: left;
     border: 1px solid gray;
+    height: 75em;
 }
 
 .business-plan-list .column:nth-child(2) {
     margin: 0 2em;
 }
 
-.business-plan-list .column h1 {
+.business-plan-list .column h1, .row h1 {
     font-size: 20px;
     font-weight: 500;
-    line-height: 60px;
+    line-height: 50px;
     text-align: center;
     border-bottom: 1px solid gray;
 }
@@ -283,22 +289,18 @@ ul, li {
     margin-top: 1em;
 }
 
-.price h2 {
-    font-size: 25px;
-}
-
 span {
     width: 100%;
 }
 
 .price span:first-of-type {
-    font-size: 18px;
-    margin: 20px 0;
+    font-size: 1.05em;
+    margin: 1em 0;
     font-weight: 800;
 }
 
 .price span:last-of-type {
-    font-size: 17px;
+    font-size: 0.9em;
     color: rgb(117, 115, 115);
 }
 
@@ -310,7 +312,7 @@ span {
     margin-left: 9%;
 }
 
-.function li {
+.function li, .plan li {
     margin-bottom: 1.5em;
 }
 
@@ -320,11 +322,11 @@ span {
 
 .function a {
     margin-bottom: 20em;
-    padding: 5px 15px;
+    padding: 5px 30px;
 }
 .function div {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 .function div span a{
@@ -332,8 +334,54 @@ span {
     text-decoration: underline;
 }
 
+.plan h3{
+    margin-bottom: 1.5em;
+}
+
+.border-line {
+    display: block;
+    border: none;
+    border-top: 1px solid grey;
+    border-bottom: none;
+    width: 3.5em;
+    margin-bottom: 4.5em;
+}
+
+.box-contact {
+    margin: 0 3%;
+}
+
+.row {
+    width: 100%;
+    height: 15em;
+    border: 1px solid gray;
+    float: left;
+    margin-top: 2em;
+}
+
+.row .box-contact div {
+    margin-top: 1em;
+}
+
+.row .box-contact h2 {
+    margin-bottom: 0.5em;
+}
+
+.row .box-contact a {
+    padding: 5px 25px;
+}
+
 
 /* Business Plan List */
+
+
+
+
+/* Partner */
+
+
+
+/* Partner */
 
 
 
