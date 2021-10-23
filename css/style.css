@@ -423,6 +423,11 @@ span {
 
 
 /* Operation */
+
+.card {
+    margin-bottom: 12em;
+}
+
 .card .box-title {
     margin-top: 2.5em;
     margin-bottom: 0.5em;
@@ -459,6 +464,22 @@ span {
 }
 
 /* Operation */
+
+
+
+
+/* Team */
+
+.team-box h2 {
+    margin-bottom: 1em;
+}
+
+.team-box a {
+    margin-top: 3em;
+    text-decoration: underline;
+}
+
+/* Team */
 
 
 
