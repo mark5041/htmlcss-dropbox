@@ -79,7 +79,7 @@ h2 {
     font-weight: 800;
 }
 
-h3 {
+h3, summary {
     font-size: 1.2em;
     font-weight: 800;
 }
@@ -603,7 +603,7 @@ span {
 
 .FAQ-box .question{
     border-top: 1px solid black;
-    padding: 1.5em 0;
+    padding: 1.8em 0;
 }
 
 .FAQ-box h2 {
@@ -613,26 +613,35 @@ span {
     margin-bottom: 1.5em;
 }
 
-.FAQ-box h3 {
-    display: inline-block;
-}
-
-.chevron {
-    font-size: 1.3em;
-    background-color: transparent; 
-    border: transparent;
-    cursor: pointer;
-}
-
 .answer {
-    padding: 1.5em 0;
+    padding: 1.8em 0;
     padding-left: 3em;
-    display: none;
 }
 
-.quest-4 .question{
+.FAQ-box .container{
     border-bottom: 1px solid black;
 }
+
+details>summary {
+    list-style: none;
+    padding-right: 30px;
+  }
+  summary::-webkit-details-marker {
+    display: none
+  }
+  
+  summary::after {
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    content: "\f078";
+    float: right;
+  }
+  details[open] summary:after {
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+    content: "\f077";
+    float: right;
+  }
 
 /* FAQ */
 
