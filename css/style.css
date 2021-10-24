@@ -635,13 +635,9 @@ details>summary {
     font-weight: 900; 
     content: "\f078";
     float: right;
+    transition: 1s;
   }
-  details[open] summary:after {
-    font-family: "Font Awesome 6 Free"; 
-    font-weight: 900; 
-    content: "\f077";
-    float: right;
-  }
+
 
 /* FAQ */
 
