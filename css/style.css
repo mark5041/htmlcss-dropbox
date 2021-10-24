@@ -17,6 +17,10 @@ html {
     clear: both;
 }
 
+.relative {
+    position: relative;
+}
+
 .fl {
     float: left;
 }
@@ -100,6 +104,10 @@ h3 {
     color: #0061ff;
 }
 
+.text-dark-red {
+    color: #620a2d;
+}
+
 a {
     text-decoration: none;
 }
@@ -128,8 +136,42 @@ ul, li {
     background-color: white;
 }
 
+.bg-light-gray {
+    background-color: #f5f5f5;
+}
+
 .bg-light-blue {
     background-color: #b4d0e7;
+}
+
+.bg-dark-red {
+    background-color: #61082b;
+}
+
+.bg-light-green {
+    background-color: #a2d39b
+    ;
+}
+
+.bg-medium-blue {
+    background-color: #0093ce
+    ;
+}
+
+.bg-light-red {
+    background-color: #ff1c1c;
+}
+
+.bg-dark-blue {
+    background-color: #0d2481;
+}
+
+.bg-red {
+    background-color: #d5001f;
+}
+
+.bg-yellow {
+    background-color: #ffd830;
 }
 
 .sol {
@@ -239,7 +281,6 @@ ul, li {
     appearance: none;
     outline: none;
     cursor: pointer;
-    
     transition: 1s;
 }
 
@@ -252,20 +293,16 @@ ul, li {
     font-size: 20px;
 }
 
-.rounded-check:first-of-type{
-    left: 22%;
-}
-
 .rounded-check:last-of-type{
-    left: 37%;
+    left: 30%;
 }
 
 .rounded-check-text:first-of-type {
-    left: 23.5%;
+    left: 3%;
 }
 
 .rounded-check-text:last-of-type{
-    left: 38.5%;
+    left: 33%;
 }
 
 /* Business Plan Checkbox */
@@ -486,7 +523,72 @@ span {
 
 /* Sponsor */
 
+.container-sponsor {
+    margin-top: 5em;
+    height: 35.75em;
+}
 
+.side-column {
+    width: 30%;
+    height: 100%;
+}
+
+.container-sponsor .column {
+    width: 40%;
+    height: 100%;
+}
+
+.card-sponsor {
+    width: 50%;
+    height: 50%;
+}
+
+.card-sponsor img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    filter: invert(100%);
+}
+
+.side-column:first-of-type .card-sponsor:first-of-type {
+    border: 10px solid #d0e9cd;
+}
+
+.container-sponsor .column {
+    padding: 3em;
+    border: transparent;
+}
+
+.container-sponsor .column .border-line{
+    width: 4em;
+    margin-top: 2em;
+}
+
+.container-sponsor .column p {
+    margin-top: 3em;
+    margin-bottom: 3.5em;
+}
+
+.free-trial {
+    width: 100%;
+}
+
+.container-sponsor .container {
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.container-sponsor .container h2{
+    width: 50%;
+    display: inline-block;
+}
+
+.container-sponsor .container a {
+    padding: 8px 50px;
+    border: transparent;
+}
 
 /* Sponsor */
 
@@ -495,7 +597,42 @@ span {
 
 /* FAQ */
 
+.FAQ-box {
+    padding-bottom: 6em;
+}
 
+.FAQ-box .question{
+    border-top: 1px solid black;
+    padding: 1.5em 0;
+}
+
+.FAQ-box h2 {
+    display: inline-block;
+    font-size: 2.5em;
+    padding-top: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.FAQ-box h3 {
+    display: inline-block;
+}
+
+.chevron {
+    font-size: 1.3em;
+    background-color: transparent; 
+    border: transparent;
+    cursor: pointer;
+}
+
+.answer {
+    padding: 1.5em 0;
+    padding-left: 3em;
+    display: none;
+}
+
+.quest-4 .question{
+    border-bottom: 1px solid black;
+}
 
 /* FAQ */
 
