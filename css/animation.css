@@ -1,3 +1,11 @@
+.header li {
+  transition: 0.1s;
+}
+
+.header li:hover {
+  border-bottom: 2px solid #0061ff;
+}
+
 details[open] summary:after {
     transform: rotate(180deg);
   }
@@ -8,4 +16,8 @@ details[open] summary:after {
 
 .btn-black:hover {
   background-color: rgb(240, 240, 240);
+}
+
+.rounded-check:focus {
+  border: 5px solid #0061ff;
 }

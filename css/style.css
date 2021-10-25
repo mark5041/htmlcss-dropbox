@@ -121,6 +121,11 @@ a {
 }
 
 
+.btn-primary {
+    display: block;
+    text-align: center;
+}
+
 .btn-black {
     border: 1px solid black;
 }
@@ -232,6 +237,7 @@ a {
 
 .jumbo .chest-item a.btn{
     padding: 8px 30px;
+    max-width: 17em;
 }
 
 .jumbo .box-image {
@@ -270,10 +276,6 @@ a {
     appearance: none;
     outline: none;
     cursor: pointer;
-}
-
-.rounded-check:checked {
-    border: 5px solid #0061ff;
 }
 
 .rounded-check-text {
@@ -352,10 +354,6 @@ span {
     list-style: none;
 }
 
-.plan ul {
-    padding-bottom: 5.8135em;
-    margin-bottom: 4em;
-}
 
 .plan li:before{
     content: "\f00c";
@@ -364,8 +362,8 @@ span {
     margin-left: -1.3em;
 }
 
-.business-plan-list .column:first-of-type .plan ul{
-    padding-bottom: 10em;
+.business-plan-list .column {
+    min-height: 76em;
 }
 
 .function li, .plan li {
@@ -401,7 +399,7 @@ span {
     margin-left: -1.4em;
 }
 
-.column:first-child ul li:first-child::before {
+.column:first-child .function ul li:first-child::before {
     content: "\f007";
     font-family: "Font Awesome 6 Free";
     font-weight: normal;
@@ -413,7 +411,6 @@ span {
 }
 
 .function a.btn {
-    margin-bottom: 20em;
     padding: 5px 30px;
 }
 .function div {
@@ -494,6 +491,7 @@ span {
 
 .pharagraph a {
     padding: 8px 20px;
+    max-width: 171.109px;
 }
 
 /* Partner */
@@ -577,6 +575,8 @@ span {
 
 .container-sponsor .column {
     width: 40%;
+    padding: 3em;
+    max-height: 576px;
 }
 
 
@@ -605,10 +605,6 @@ span {
 
 .side-column:first-of-type .card-sponsor:first-of-type {
     border: 10px solid #d0e9cd;
-}
-
-.container-sponsor .column {
-    padding: 3em;
 }
 
 .container-sponsor .column img {
@@ -747,6 +743,7 @@ details>summary {
     outline:0px;
     height: 1em;    
     width: 5em;
+    cursor: pointer; 
 }
 
 select {
@@ -756,7 +753,7 @@ select {
 }
 
 .select:after {
-    content:"\f0d7";
+    content:"\f0d8";
     font-family: "Font Awesome 6 Free";
     font-weight: 900; 
     color: #fff;
@@ -769,7 +766,7 @@ select {
     width: 40%;
     height: 100%;      
     pointer-events: none;
-    box-sizing: border-box;   
+    box-sizing: border-box;  
 }
 
 /* end */
