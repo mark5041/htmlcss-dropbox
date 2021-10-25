@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
 html {
@@ -54,10 +55,6 @@ html {
 
 .box {
     margin: 0 10%;
-}
-
-.box-flex {
-    display: flex;
 }
 
 header {
@@ -154,8 +151,7 @@ a {
 }
 
 .bg-medium-blue {
-    background-color: #0093ce
-    ;
+    background-color: #0093ce;
 }
 
 .bg-light-red {
@@ -176,11 +172,6 @@ a {
 
 .bg-black {
     background-color: black;
-}
-
-
-.sol {
-    border: solid;
 }
 
 /* common */
@@ -225,8 +216,7 @@ a {
 }
 
 .chest {
-    margin-right: 1em;
-    width: 35%;
+    width: 30%;
     margin-top: 4.8em;
 }
 
@@ -245,12 +235,13 @@ a {
 }
 
 .jumbo .box-image {
+    width: 70%;
     bottom: -5em;
+    right: 0;
 }
 
 .jumbo .box-image img{
     width: 100%;
-    max-width: 870px;
 }
 
 .space {
@@ -279,7 +270,6 @@ a {
     appearance: none;
     outline: none;
     cursor: pointer;
-    transition: 1s;
 }
 
 .rounded-check:checked {
@@ -315,7 +305,6 @@ a {
 
 .column {
     width: calc(100% / 3 - 21.49px);
-    height: 75em;
 }
 
 .business-plan-list .column {
@@ -357,13 +346,68 @@ span {
     margin-top: 2.5em;
 }
 
-.fa-ul {
+.plan ul, .function ul {
     margin-left: 9%;
+    padding: 0;
+    list-style: none;
+}
+
+.plan ul {
+    padding-bottom: calc(10em - 25%);
+}
+
+.plan li:before{
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: -1.3em;
+}
+
+.business-plan-list .column:first-of-type .plan ul{
+    padding-bottom: 10em;
 }
 
 .function li, .plan li {
     margin-bottom: 1.5em;
 }
+
+.function ul li::before {
+    content: "\f07b";
+    font-family: "Font Awesome 6 Free";
+    font-weight: normal;
+    margin-left: -1.4em;
+}
+
+.function ul li:first-child::before {
+    content: "\f234";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: -1.4em;
+}
+
+
+.function ul li:last-child::before {
+    content: "\f118";
+    font-family: "Font Awesome 6 Free";
+    font-weight: normal;
+    margin-left: -1.4em;
+}
+
+.column:first-child .function ul li:last-child::before {
+    content: "\f303";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: -1.4em;
+}
+
+.column:first-child ul li:first-child::before {
+    content: "\f007";
+    font-family: "Font Awesome 6 Free";
+    font-weight: normal;
+    margin-left: -1.4em;
+}
+
+
 
 .function li:last-of-type {
     margin-bottom: 2.5em;
@@ -402,9 +446,9 @@ span {
 
 .row {
     width: 100%;
-    height: 15em;
     border: 1px solid gray;
     margin-top: 2em;
+    padding-bottom: 2.5em;
 }
 
 .row .box-contact div {
@@ -422,7 +466,6 @@ span {
 .row .box-contact a {
     padding: 5px 25px;
 }
-
 
 /* Business Plan List */
 
@@ -486,7 +529,10 @@ span {
 
 .card-image {
     height: 50%;
-    justify-content: center;
+}
+
+.card-image img {
+    width: 90%;
 }
 
 .card-pharagraph h2 {
@@ -634,7 +680,7 @@ details>summary {
     font-weight: 900; 
     content: "\f078";
     float: right;
-    transition: 1s;
+    transition: 0.5s;
   }
 
 
