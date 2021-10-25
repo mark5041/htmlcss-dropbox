@@ -29,6 +29,10 @@ html {
     float: right;
 }
 
+.h-100 {
+    height: 100%;
+}
+
 .container-box {
     width: 65%;
     margin: 0 auto;
@@ -37,7 +41,6 @@ html {
 
 .container-partner {
     width: 50%;
-    height: 100%;
 }
 
 .container {
@@ -116,16 +119,12 @@ a {
     text-decoration: underline;
 }
 
-ul, li {
-    display: inline-block;
-}
-
 .btn {
     border: 1px transparent black;
 }
 
-.btn-1 {
-    border: 1px solid black;
+.visible {
+    border: solid;
 }
 
 .bg-blue {
@@ -190,7 +189,9 @@ ul, li {
 
 /* navigation */
 
-
+.header ul, .header li {
+    display: inline-block;
+}
 
 .logo img {
     margin-left: 1em;
@@ -219,17 +220,13 @@ ul, li {
 /* jumbotron */
 
 .jumbo {
-    height: 74vh;
     margin-top: 5em;
-}
-
-.jumbo-title {
-    margin-bottom: 3em;
 }
 
 .chest {
     margin-right: 1em;
     width: 35%;
+    margin-top: 4.8em;
 }
 
 .chest-item {
@@ -246,7 +243,12 @@ ul, li {
     padding: 8px 30px;
 }
 
-.box-image img{
+.jumbo .box-image {
+    bottom: -5em;
+}
+
+.jumbo .box-image img{
+    width: 100%;
     max-width: 870px;
 }
 
@@ -255,15 +257,6 @@ ul, li {
 }
 
 /* jumbotron */
-
-
-
-
-/* Business */
-
-
-
-/* Business */
 
 
 
@@ -535,7 +528,6 @@ span {
 
 .side-column {
     width: 30%;
-    height: 100%;
 }
 
 .container-sponsor .column {
@@ -649,15 +641,6 @@ details>summary {
 
 
 
-/* footer */
-
-
-
-/* footer */
-
-
-
-
 /* utilities */
 
 .footer .column {
@@ -673,7 +656,6 @@ details>summary {
 
 .footer .container-box .column ul li {
     margin-top: 0.5em;
-    display: list-item;
     list-style: none;
 }
 
@@ -733,7 +715,5 @@ select {
     pointer-events: none;
     box-sizing: border-box;   
 }
-
-
 
 /* end */
