@@ -353,7 +353,8 @@ span {
 }
 
 .plan ul {
-    padding-bottom: calc(10em - 25%);
+    padding-bottom: 5.8135em;
+    margin-bottom: 4em;
 }
 
 .plan li:before{
@@ -406,8 +407,6 @@ span {
     font-weight: normal;
     margin-left: -1.4em;
 }
-
-
 
 .function li:last-of-type {
     margin-bottom: 2.5em;
@@ -570,7 +569,6 @@ span {
 
 .container-sponsor {
     margin-top: 5em;
-    height: 35.75em;
 }
 
 .side-column {
@@ -579,12 +577,22 @@ span {
 
 .container-sponsor .column {
     width: 40%;
-    height: 100%;
 }
+
 
 .card-sponsor {
     width: 50%;
-    height: 50%;
+}
+
+.container-sponsor .column::after {
+    content: "";
+    padding-bottom: 100%;
+  }
+
+.card-sponsor:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
 .card-sponsor img {
