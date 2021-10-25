@@ -21,6 +21,10 @@ html {
     position: relative;
 }
 
+.absolute {
+    position: absolute;
+}
+
 .fl {
     float: left;
 }
@@ -119,12 +123,9 @@ a {
     text-decoration: underline;
 }
 
-.btn {
-    border: 1px transparent black;
-}
 
-.visible {
-    border: solid;
+.btn-black {
+    border: 1px solid black;
 }
 
 .bg-blue {
@@ -269,7 +270,6 @@ a {
 }
 
 .rounded-check {
-    position: absolute;
     height: 20px;
     width: 20px;
     background-color: white;
@@ -287,7 +287,6 @@ a {
 }
 
 .rounded-check-text {
-    position: absolute;
     font-size: 20px;
 }
 
@@ -316,8 +315,11 @@ a {
 
 .column {
     width: calc(100% / 3 - 21.49px);
-    border: 1px solid gray;
     height: 75em;
+}
+
+.business-plan-list .column {
+    border: 1px solid gray;
 }
 
 .business-plan-list .column:nth-child(2) {
@@ -471,7 +473,6 @@ span {
 .card .column {
     margin-top: 2em;
     height: 32em;
-    border: transparent;
 }
 
 .card .column:nth-child(1n + 5) {
@@ -541,7 +542,6 @@ span {
 }
 
 .card-sponsor img {
-    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -555,7 +555,10 @@ span {
 
 .container-sponsor .column {
     padding: 3em;
-    border: transparent;
+}
+
+.container-sponsor .column img {
+    max-width: 200px
 }
 
 .container-sponsor .column .border-line{
@@ -584,7 +587,6 @@ span {
 
 .container-sponsor .container a {
     padding: 8px 50px;
-    border: transparent;
 }
 
 /* Sponsor */
@@ -647,7 +649,6 @@ details>summary {
     margin: 5.5em 0;
     width: calc(100% / 5);
     height: 15em;
-    border: transparent;
 }
 
 .footer h2 {
@@ -658,7 +659,6 @@ details>summary {
     margin-top: 0.5em;
     list-style: none;
 }
-
 
 .footer hr {
     width: 8em;
@@ -707,7 +707,9 @@ select {
     font-weight: 900; 
     color: #fff;
     padding: auto;
-    position: absolute; right: 0; top: 0;
+    position: absolute; 
+    right: 0; 
+    top: 0;
     z-index: 1;
     text-align: center;
     width: 40%;
