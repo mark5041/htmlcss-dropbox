@@ -60,7 +60,6 @@ html {
 header {
     height: 80px;
     line-height: 80px;
-    background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -186,7 +185,7 @@ a {
 
 /* navigation */
 
-.header ul, .header li {
+.header ul:not(.drop-menu) li:not(.drop-row){
     display: inline-block;
 }
 
@@ -195,11 +194,15 @@ a {
     vertical-align: middle;
 }
 
-.nav a {
+.nav button {
     color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
 }
 
-.nav ul li {
+.nav ul li:not(.drop-row) {
     margin-left: 3em;
 }
 
@@ -210,6 +213,35 @@ a {
 }
 
 /* navigation */
+
+
+
+
+/* drop-menu */
+
+.drop-menu li {
+    display: list-item;
+}
+
+.drop-menu {
+    position: absolute;
+    list-style: none;
+    bottom: -10em;
+    line-height: 28px;
+    padding: 1em 3em 1em 1.5em;
+    font-size: 0.7em;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.drop-row a {
+    color: black;
+}
+
+/* drop-menu */
 
 
 
@@ -650,6 +682,14 @@ span {
     padding-bottom: 6em;
 }
 
+.FAQ-box ul {
+    list-style: none;;
+}
+
+.FAQ-box .container{
+    border-bottom: 1px solid black;
+}
+
 .FAQ-box .question{
     border-top: 1px solid black;
     padding: 1.8em 0;
@@ -662,31 +702,18 @@ span {
     margin-bottom: 1.5em;
 }
 
-.answer {
-    padding: 1.8em 0;
-    padding-left: 3em;
+.question p {
+    padding-top: 1.8em;
+    display: none;
 }
 
-.FAQ-box .container{
-    border-bottom: 1px solid black;
-}
-
-details>summary {
-    list-style: none;
-    padding-right: 30px;
-  }
-  summary::-webkit-details-marker {
-    display: none
-  }
-  
-  summary::after {
-    font-family: "Font Awesome 6 Free"; 
+.question h3::after {
+    content:"\f078";
+    font-family: "Font Awesome 6 Free";
     font-weight: 900; 
-    content: "\f078";
     float: right;
     transition: 0.5s;
-  }
-
+}
 
 /* FAQ */
 
