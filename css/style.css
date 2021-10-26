@@ -225,16 +225,21 @@ a {
 
 .drop-menu {
     position: absolute;
+    text-align: center;
     list-style: none;
     bottom: -10em;
-    line-height: 28px;
-    padding: 1em 3em 1em 1.5em;
+    line-height: calc(108px / 3);
+    min-width: 108px;
     font-size: 0.7em;
     border-radius: 20px;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in;
+}
+
+.nav ul:last-of-type > li:nth-child(odd) .drop-menu {
+    bottom: -6.8em;
 }
 
 .drop-row a {

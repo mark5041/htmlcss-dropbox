@@ -13,7 +13,17 @@ button:focus + ul {
 }
 
 .drop-menu > li:hover {
-  background-color: blueviolet;
+  background-color: #b4d0e7;
+}
+
+.drop-menu > li:first-child:hover {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.drop-menu > li:last-of-type:hover {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .question:hover p{
