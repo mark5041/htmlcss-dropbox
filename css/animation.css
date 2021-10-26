@@ -2,7 +2,7 @@
   transition: 0.1s;
 }
 
-ul > li:not(.drop-row):hover{
+.nav ul > li:not(.drop-row):hover{
   border-bottom: 1.5px solid #0061ff;
 }
 
@@ -26,8 +26,17 @@ button:focus + ul {
   border-bottom-right-radius: 20px;
 }
 
+.question:hover {
+  height: 136.39px;
+}
+
+.question:last-of-type:hover {
+  height: 152.39px;
+}
+
 .question:hover p{
-  display: inline-block;
+  display: block;
+  opacity: 1;
 }
 
 .question:hover h3::after {
@@ -49,3 +58,4 @@ button:focus + ul {
 .footer a:hover, .drop-row a:hover {
   text-decoration: underline;
 }
+

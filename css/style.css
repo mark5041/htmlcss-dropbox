@@ -253,7 +253,7 @@ a {
 
 /* jumbotron */
 
-.jumbo {
+.jumbo, .container-sponsor{
     margin-top: 5em;
 }
 
@@ -450,9 +450,9 @@ span {
 .function a.btn {
     padding: 5px 30px;
 }
+
 .function div {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
+    margin: 2.5em 0;
 }
 
 .function div span a{
@@ -602,9 +602,7 @@ span {
 
 /* Sponsor */
 
-.container-sponsor {
-    margin-top: 5em;
-}
+
 
 .side-column {
     width: 30%;
@@ -707,9 +705,15 @@ span {
     margin-bottom: 1.5em;
 }
 
+.question {
+    height: 85.59px;
+    transition: 0.2s;
+}
+
 .question p {
     padding-top: 1.8em;
-    display: none;
+    visibility: none;
+    opacity: 0;
 }
 
 .question h3::after {
@@ -717,7 +721,6 @@ span {
     font-family: "Font Awesome 6 Free";
     font-weight: 900; 
     float: right;
-    transition: 0.5s;
 }
 
 /* FAQ */
